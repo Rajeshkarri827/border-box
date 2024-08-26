@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.container .box1 {
+    border: 4px solid #3498db;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container > .box2 {
+    border: 4px dotted #e74c3c;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .box2 + .box3 {
+    border: 4px dashed #2ecc71;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .box3 ~ .box4 {
+    border: 4px double #f1c40f;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .box4 + .box5 {
+    border: 4px solid #9b59b6;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .box6{
+    border: 4px solid black;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display:grid;
+    grid-template-areas: "box1 box2 "
+            " box3 box4 "
+            "box5 box6";
+}
+
+.box1{
+    grid-area: box1;
+    margin:5px;
+}
+.box2{
+    grid-area: box2;
+    margin:5px;
+}
+.box3{
+    grid-area: box3;
+    margin:5px;
+
+}
+.box4{
+    grid-area: box4;
+    margin:5px;
+}
+.box5{
+    grid-area: box5;
+    margin:5px;
+}
+.box6{
+    grid-area:box6;
+    margin:5px;
+}
